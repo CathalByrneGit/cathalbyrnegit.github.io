@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ════════════════════════════════════════════════════════
+   Considered minimalism with an analog soul.
+   Base: aged parchment sketch — graphite, warm white.
+   Accents: Carrington cosmic flashes — rust, teal, ochre, red.
+   ════════════════════════════════════════════════════════ */
+
+:root {
+  /* Parchment ground */
+  --bg:       #eae4d8;
+  --dot:      rgba(40, 32, 22, 0.07);
+  --text:     #2c2720;
+  --dim:      #7a7060;
+  --heading:  #1a1814;
+
+  /* Carrington flashes */
+  --rust:     #b85a24;   /* terracotta stain, sketch */
+  --teal:     #1e5c56;   /* deep water, boat painting */
+  --ochre:    #b07c18;   /* hull gold, boat painting */
+  --red:      #c03020;   /* nebula, boat painting */
+  --slate:    #6a8292;   /* cool wash, sketch */
+
+  --border:   rgba(40, 32, 22, 0.12);
+}
+
+/* ── Halftone parchment base ──────────────────────────── */
+body {
+  background-color: var(--bg) !important;
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px) !important;
+  background-size: 16px 16px !important;
+  color: var(--text) !important;
+  font-family: 'Libre Baskerville', Georgia, serif;
+}
+
+/* ── Remove @article card boxes ──────────────────────── */
+.frontmatter, .body {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ── Typography ───────────────────────────────────────── */
+h1, h2, h3, h4 {
+  color: var(--heading);
+  font-family: 'Jost', -apple-system, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+/* Flash: each heading level gets a different Carrington accent */
+.body h2 {
+  border-bottom: 1px solid var(--border);
+}
+.body h2::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  margin-top: -1px;
+  background: var(--teal);
+}
+h3::before {
+  content: '· ';
+  color: var(--rust);
+  font-weight: 400;
+}
+
+a             { color: var(--rust); }
+a:hover       { color: var(--teal); text-decoration: none; }
+
+blockquote {
+  background: transparent !important;
+  border: none !important;
+  border-left: 3px solid var(--slate) !important;
+  box-shadow: none !important;
+  color: var(--dim);
+  font-style: italic;
+  padding: 0.2em 0 0.2em 1.2em;
+  margin-left: 0;
+}
+
+/* Attribution line — write as a separate paragraph at the end:
+   > Quote text.
+   >
+   > — Author Name                                          */
+blockquote > p:last-child:not(:first-child) {
+  font-style: normal;
+  font-size: 0.85em;
+  color: var(--slate);
+  letter-spacing: 0.03em;
+  margin-top: 0.6em;
+}
+
+hr, .footnotes::before { border-color: var(--border); }
+
+/* Flash: inline code gets a warm ochre tint */
+code {
+  background: rgba(176, 124, 24, 0.10) !important;
+  color: var(--text) !important;
+}
+pre > code {
+  background: rgba(26, 24, 20, 0.06) !important;
+  border-color: var(--border) !important;
+}
+.fenced-chunk { border-left-color: var(--dim); }
+
+/* ── Tables ───────────────────────────────────────────── */
+table:not([class]) {
+  border-top-color: var(--border);
+  border-bottom-color: var(--border);
+}
+table:not([class]) thead th { border-bottom-color: var(--border); }
+table:not([class]) thead,
+table:not([class]) tfoot,
+table:not([class]) tr:nth-child(even) {
+  background: rgba(40, 32, 22, 0.04);
+}
+
+/* ── TOC ──────────────────────────────────────────────── */
+#TOC {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+#TOC a { color: var(--dim); }
+#TOC a:hover { color: var(--rust); }
+#TOC ul ul { border-left-color: var(--border); }
+
+/* ── Nav ──────────────────────────────────────────────── */
+body > nav {
+  padding: 0.7em 0;
+  margin-bottom: 2.5em;
+  border-bottom: 1px solid var(--border);
+}
+body > nav p { margin: 0; }
+body > nav a {
+  margin-right: 2em;
+  text-decoration: none;
+  color: var(--dim);
+  font-size: 0.78em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+body > nav a:hover { color: var(--rust); }
+
+/* ── Footer ───────────────────────────────────────────── */
+body > footer {
+  margin-top: 3.5em;
+  padding-top: 1em;
+  border-top: 1px solid var(--border);
+  font-size: 0.78em;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* ── Post lists ───────────────────────────────────────── */
+ul li strong a { color: var(--text); text-decoration: none; }
+ul li strong a:hover { color: var(--rust); }
+
+/* Flash: post dates get a dim slate colour */
+ul li { color: var(--dim); }
+ul li strong { color: var(--text); }
+
+/* Flash: alternate list items get a subtle ochre left mark */
+ul li:nth-child(3n+1)::marker { color: var(--rust); }
+ul li:nth-child(3n+2)::marker { color: var(--teal); }
+ul li:nth-child(3n+3)::marker { color: var(--ochre); }
+
+
+/* ════════════════════════════════════════════════════════
+   ADDITIONS — analog apparatus for the report series.
+   Each block is independent; delete what you don't want.
+   Uses the existing :root tokens.
+   ════════════════════════════════════════════════════════ */
+
+
+/* ── 1. Source notes ──────────────────────────────────────
+   The posts carry dozens of `> *Sources: ...*` blocks.
+   Distinguish them from real quotations: smaller, archival,
+   rust rule, mono small-caps label feel. */
+blockquote em:only-child {
+  font-style: normal;
+  font-size: 0.78em;
+  color: var(--dim);
+  letter-spacing: 0.02em;
+  display: block;
+}
+blockquote:has(> p > em:only-child) {
+  padding-left: 1em;
+}
+
+
+
+
+/* ── 4. Pull-stat callout ─────────────────────────────────
+   For the load-bearing numbers (81 cents, €8.167bn, 500.1%).
+   Usage:
+     <p class="pullstat">81<span>cents in every euro of new
+     value, retained as profit</span></p>                   */
+.pullstat {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 3.4em;
+  line-height: 1;
+  color: var(--rust);
+  margin: 0.6em 0 0.7em;
+  letter-spacing: -0.01em;
+}
+.pullstat span {
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.22em;
+  letter-spacing: 0.01em;
+  color: var(--dim);
+  margin-top: 0.5em;
+  max-width: 28em;
+}
+
+
+/* ── 5. lt() table dress ──────────────────────────────────
+   Parchment-native styling for the lt tables; replaces the
+   navy in-table highlight with an ochre wash that belongs
+   on this paper. Keep lt_css() minimal and let this rule
+   carry the Ireland row:
+     lt_css(.ireland_row = list())     — class only, no inline */
+.lt-table, table.lt {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.88em;
+}
+.lt-table thead th, table.lt thead th {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  color: var(--heading);
+  border-bottom: 2px solid var(--rust) !important;
+}
+
+/* numbers right-aligned, country/label column left */
+.lt-table td:not(:first-child), table.lt td:not(:first-child) {
+  text-align: right;
+}
+
+
+
+
+/* ── 7. Post meta line ────────────────────────────────────
+   Date / series position under the H1. Jost tracking, like
+   the nav. Usage: <p class="postmeta">Post 5 of 8 · June 2026</p> */
+.postmeta {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-top: -1.2em;
+}
+
+
+
+
+/* ── 9. Print ─────────────────────────────────────────────
+   Readers will print these posts or save them to PDF.
+   Black ink on white, no dots, no nav, open all folds. */
+@media print {
+  body {
+    background: #fff !important;
+    background-image: none !important;
+    color: #000 !important;
+  }
+  body > nav, body > footer { display: none; }
+  details { border: none; padding: 0; }
+  details > summary { display: none; }
+  details:not([open]) > * { display: block; }
+  a { color: #000; text-decoration: underline; }
+  blockquote { color: #333; }
+  .pullstat { color: #000; }
+}
+
+

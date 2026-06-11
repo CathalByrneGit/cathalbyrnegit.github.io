@@ -1,0 +1,13 @@
+---
+title: About
+---
+
+Hi, I'm Cathal. This is my personal website. I may curse and will spell many things incorrectly
+
+The site is built with [litedown](https://github.com/yihui/litedown) — Yihui Xie's
+lightweight take on R Markdown.
+
+Tables use [lt](https://github.com/yihui/lt) and interactive charts use
+[gglite](https://github.com/yihui/gglite), both by the same author.
+
+You can reach me at [cathal470@gmail.com](mailto:cathal470@gmail.com).

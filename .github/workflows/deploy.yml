@@ -1,0 +1,80 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Daily at 06:30 UTC — publishes any post whose date has arrived.
+    # Posts dated in the future are excluded from deployment below,
+    # so the whole series can sit on main and release itself.
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+
+      - name: Install R packages
+        run: |
+          Rscript -e "
+            options(repos = c(
+              yihui = 'https://yihui.r-universe.dev',
+              CRAN  = 'https://cloud.r-project.org'
+            ))
+            if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes')
+            remotes::install_github('davidsjoberg/ggbump')
+            pkgs <- c('litedown', 'lt', 'gglite', 'xfun',"csodata","eurostat","dplyr","tidyr","stringr","ggplot2","ggrepel","ggtext")
+            install.packages(pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)])
+          "
+
+      # Git checkouts don't preserve mtimes, so litedown's 'outdated'
+      # heuristic is unreliable on CI. Force the listing page to rebuild
+      # every run so the date filter in posts/index.Rmd re-evaluates
+      # against today's date.
+      - name: Force listing rebuild
+        run: touch posts/index.Rmd index.Rmd
+
+      - name: Build site
+        run: Rscript build.R
+
+      - name: Stage for deployment (excluding future-dated posts)
+        run: |
+          TODAY=$(date -u +%F)
+          EXCLUDES=""
+          for d in posts/*/; do
+            name=$(basename "$d")
+            postdate=$(echo "$name" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}' || true)
+            if [ -n "$postdate" ] && [ "$postdate" \> "$TODAY" ]; then
+              echo "Holding back (dated $postdate): $name"
+              EXCLUDES="$EXCLUDES --exclude=posts/$name/"
+            fi
+          done
+
+          mkdir -p _site
+          rsync -av \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.claude/' \
+            --exclude='*.Rmd' \
+            --exclude='*.R' \
+            --exclude='_litedown.yml' \
+            --exclude='*.Rproj' \
+            --exclude='_site/' \
+            $EXCLUDES \
+            . _site/
+          touch _site/.nojekyll
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site

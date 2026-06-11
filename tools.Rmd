@@ -1,0 +1,25 @@
+---
+title: "Tools"
+---
+
+I have developed a number of tools some much more experimental than others. It would be remiss of me to not acknowledge extensive use of AI in the production of much of the following code.
+
+A clear focus on R and its implementation in public sector data is evident. My employment in the [CSO](https://www.cso.ie/en/index.html) (I'm currently on career break (travelling) hence some spicier takes on the website) is the main inspiration for packages and utilities produced. Problems faced are ultimately the main motivation for my ideas.
+
+Code can be found [codeberg](https://codeberg.org/pingubyrne/) and [Github](https://github.com/CathalByrneGit)
+
+## May be of interest
+
+- [OiReachtais](https://github.com/CathalByrneGit/oiReachtas) and [tendeRs](https://codeberg.org/pingubyrne/tendeRs) are simple R wrappers around public api. Included are [Ireland's national parliament](https://www.oireachtas.ie/) and the [EU's public procurement tendering site](https://ted.europa.eu/en/).
+
+- [datapond](https://github.com/CathalByrneGit/datapond) an R api for duckdb's datalake solution [ducklake](https://ducklake.select/)
+
+- [tardoc](https://github.com/CathalByrneGit/tardoc) Quickly create documentation files for a [targets](https://pkg.yihui.org/litedown/book/) pipeline with varying degrees of extrenal dependencies and functionalitties.
+
+- [corncrake](https://github.com/CathalByrneGit/corncrake) Absolut pie in the sky attempt at buidling an api for CSO ehecs returns when I discovered company surveys aren't returned via an api but instead deposited in a secure deposit box as an xml.
+
+- [pintail](https://github.com/CathalByrneGit/pintail) first experimentation with golang. Attempts (bit two left feet atm) to provide a cmd line route to manage and assess duckdb related concerns.
+
+- [CSO_datasette](https://github.com/CathalByrneGit/CSO_datasette) a datasette plugin to connect to the CSO's data portal [PXstat](https://data.cso.ie/) and query data via a llm agent.
+
+

@@ -1,0 +1,53 @@
+---
+title: Hmmmm
+---
+
+All murmurings.
+
+```{r echo=FALSE, results='asis'}
+dirs <- list.dirs(".", recursive = FALSE, full.names = FALSE)
+dirs <- sort(dirs[file.exists(file.path(dirs, "index.Rmd"))], decreasing = TRUE)
+
+# Staged release: hide posts whose folder date hasn't arrived yet.
+# (Deployment also excludes these folders — see .github/workflows/deploy.yml —
+# so unpublished posts are neither listed nor reachable by direct URL.)
+dir_dates <- as.Date(substr(dirs, 1, 10), format = "%Y-%m-%d")
+dirs <- dirs[is.na(dir_dates) | dir_dates <= Sys.Date()]
+
+year <- NULL
+
+pre_theme <- NULL
+for (dir in dirs) {
+  lines <- readLines(file.path(dir, "index.Rmd"), n = 30, warn = FALSE)
+  delims <- which(lines == "---")
+  if (length(delims) < 2) next
+  yaml_lines <- lines[(delims[1] + 1):(delims[2] - 1)]
+  title <- sub('^title:\\s*[\'"]?(.+?)[\'"]?\\s*$', "\\1",
+               grep("^title:", yaml_lines, value = TRUE)[1])
+  date  <- sub("^date:\\s*(.+?)\\s*$", "\\1",
+               grep("^date:", yaml_lines, value = TRUE)[1])
+  
+  theme <- sub('^theme:\\s*[\'"]?(.+?)[\'"]?\\s*$', "\\1",
+               grep("^theme:", yaml_lines, value = TRUE)[1])
+
+  post_year <- strsplit(date,'-',3)[[1]][1]|>
+    as.numeric()
+  
+  if(is.null(year) || post_year!= year){
+    
+    year <- post_year
+    
+    cat(sprintf("## %s\n",year))
+  }
+  
+  if(!is.na(theme) & (is.null(pre_theme)||pre_theme!=theme)){
+  
+    pre_theme = theme
+    
+    cat(sprintf("### %s\n",theme))
+  
+  }
+  
+  cat(sprintf("*[%s](%s/index.html)* &mdash; %s<br>", title, dir, date))
+}
+```

@@ -1,0 +1,14 @@
+site:
+  rebuild: outdated
+  pattern: "[.]R?md$"
+
+output:
+  html:
+    meta:
+      css2: ["@default", "@article", "@copy-button", "@heading-anchor", "assets/style.css"]
+      include_before: "[Home](/index.html) [Hmmmm](/posts/index.html) [Tools](/tools.html) [About](/about.html)"
+      include_after: "&copy; 2026 Cathal"
+    js2: ["@sidenotes", "@appendix", "@toc-highlight", "@copy-button", "@heading-anchor", "@pages"]
+    options:
+      toc: true
+      embed_resources: false

@@ -1,0 +1,37 @@
+---
+title: "Noot-Noot"
+---
+
+> To learn which questions are unanswerable, and not to answer them
+>
+>  &mdash;  Ursula K.Le Guin                                        
+
+Welcome. I write about a random assortment of topics —
+data, R, statistics, and Ireland (in all its vices and virtues).
+
+## Recent Thoughts
+
+```{r echo=FALSE, results='asis'}
+dirs <- list.dirs("posts", recursive = FALSE, full.names = FALSE)
+dirs <- sort(dirs[file.exists(file.path("posts", dirs, "index.Rmd"))], decreasing = TRUE)
+
+# Staged release: hide posts whose folder date hasn't arrived yet.
+# (Deployment also excludes these folders — see .github/workflows/deploy.yml —
+# so unpublished posts are neither listed nor reachable by direct URL.)
+dir_dates <- as.Date(substr(dirs, 1, 10), format = "%Y-%m-%d")
+dirs <- dirs[is.na(dir_dates) | dir_dates <= Sys.Date()]
+
+for (dir in head(dirs, 5)) {
+  lines <- readLines(file.path("posts", dir, "index.Rmd"), n = 30, warn = FALSE)
+  delims <- which(lines == "---")
+  if (length(delims) < 2) next
+  yaml_lines <- lines[(delims[1] + 1):(delims[2] - 1)]
+  title <- sub('^title:\\s*[\'"]?(.+?)[\'"]?\\s*$', "\\1",
+               grep("^title:", yaml_lines, value = TRUE)[1])
+  date  <- sub("^date:\\s*(.+?)\\s*$", "\\1",
+               grep("^date:", yaml_lines, value = TRUE)[1])
+  cat(sprintf("- **[%s](/posts/%s/index.html)** &mdash; %s\n", title, dir, date))
+}
+```
+
+[All posts &rarr;](/posts/)
