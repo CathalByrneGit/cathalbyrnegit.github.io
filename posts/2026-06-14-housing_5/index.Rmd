@@ -5,8 +5,8 @@ date: 2026-06-14
 output:
   html:
     meta:
-      css: ["@default", "@article"]
-      js: ["@copy-button" "@fold-details" "@callout" "@sidenotes", "@appendix","https://cdn.jsdelivr.net/npm/@xiee/utils/js/fold-details.min.js"]
+      css: ["@default", "@article", "@callout"]
+      js: ["@copy-button", "@fold-details", "@callout", "@sidenotes", "@appendix"]
 ---
 
 ## 8. Case Study: Glenveagh Properties in Cork — The System Made Concrete
@@ -54,7 +54,7 @@ Glenveagh Properties plc (Euronext Dublin: GLV) is one of Ireland's two listed h
 
 The state paid €445,133 per apartment, a price reflecting the full post-planning-permission market value. Had a hard land value capture levy been in place at rezoning, the planning uplift of ~€510 million would have been substantially returned to the public purse. Instead, the state paid for it twice: once by granting planning permission that created the value, and again by purchasing the output at a price that includes that value.
 
-Two points of fairness should be stated explicitly, because the analysis doesn’t depend on suppressing them. First, Glenveagh didn’t acquire the site cheaply by any market standard: the €8.5m guide price was nearly doubled at a competitive NAMA sale process that attracted significant interest. There was no sweetheart deal, and this report doesn’t suggest one. That is exactly what makes the case study structurally damning rather than scandalous, the ~€510 million in value was created after a full market-price purchase, by the planning system alone, and captured privately because no mechanism existed to do otherwise. Second, securing the permission involved genuine effort, cost, and risk: the refusal of the larger O'Callaghan Properties scheme nearby demonstrates that permission isn’t granted automatically. But that observation supports the report's framework rather than undermining it; it is the scarcity and discretionary nature of the permission that gives it its extraordinary value once granted. The harder the permission is to obtain, the larger the rent it confers on the holder.
+Two points of fairness should be stated explicitly, because the analysis doesn’t depend on suppressing them. First, Glenveagh didn’t acquire the site cheaply by any market standard: the €8.5m guide price was nearly doubled at a competitive NAMA sale process that attracted significant interest. There was no sweetheart deal, and this report does not suggest one. That is precisely what makes the case study an indictment of the framework rather than of the firm — the ~€510 million in value was created after a full market-price purchase, by the planning system alone, and captured privately because no mechanism existed to do otherwise. Second, securing the permission involved genuine effort, cost, and risk: the refusal of the larger O'Callaghan Properties scheme nearby demonstrates that permission isn’t granted automatically. But that observation supports the report's framework rather than undermining it; it is the scarcity and discretionary nature of the permission that gives it its extraordinary value once granted. The harder the permission is to obtain, the larger the rent it confers on the holder.
 
 The LDA's Marina Depot price is also not an outlier within its own programme. The same Glenveagh announcement records the January 2025 sale of 139 apartments at Brownsbarn, Dublin, to the LDA for €52 million (approximately €374,000 per unit) as one of six active Partnerships projects. The forward-fund price band of roughly €375,000–€445,000 per apartment is the going rate at which the state purchases output whose underlying land cost, at Marina Depot, was €12,733 per unit.
 

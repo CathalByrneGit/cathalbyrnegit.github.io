@@ -6,7 +6,7 @@ output:
   html:
     meta:
       css: ["@default", "@article"]
-      js: ["@copy-button" "@fold-details" "@callout" "@sidenotes", "@appendix","https://cdn.jsdelivr.net/npm/@xiee/utils/js/fold-details.min.js"]
+      js: ["@copy-button", "@fold-details", "@callout", "@sidenotes", "@appendix"]
 ---
 ## 7. The Capture Cycle: Government Failure and the Lobby Dividend
 
