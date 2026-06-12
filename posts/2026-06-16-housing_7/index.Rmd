@@ -5,8 +5,8 @@ date: 2026-06-16
 output:
   html:
     meta:
-      css: ["@default", "@article"]
-      js: ["@copy-button" "@fold-details" "@callout" "@sidenotes", "@appendix","https://cdn.jsdelivr.net/npm/@xiee/utils/js/fold-details.min.js"]
+      css: ["@default", "@article", "@callout"]
+      js: ["@copy-button", "@fold-details", "@callout", "@sidenotes", "@appendix"]
 ---
 
 
@@ -44,7 +44,7 @@ The recommended sequencing is therefore: implement the phased LVC windfall tax (
 
 #### The Kenny Report: This Is Not a New Idea — It Is Ireland's Oldest Unimplemented One
 
-Interventions 1 and 2 are routinely framed in Irish debate as novel, radical, or imported. They are none of these. In 1973, the Committee on the Price of Building Land — chaired by Mr Justice John Kenny of the High Court, and established by the government because building land prices were rising faster than the cost of housing — recommended that local authorities be empowered to acquire potential development land at its existing use value plus 25%. That is Intervention 2, proposed by a serving High Court judge, in an official report commissioned by the Irish state, more than fifty years ago. The Kenny Report's majority concluded that the increase in land value arising from community decisions (zoning, servicing, planning) belonged in substantial part to the community that created it.
+Interventions 1 and 2 are routinely framed in Irish debate as novel, radical, or imported. They are none of these. n 1973, the Committee on the Price of Building Land — chaired by Mr Justice John Kenny of the High Court — recommended that local authorities be empowered to acquire undeveloped land within court-designated areas at its existing use value plus 25%, a formula the Majority Report called 'a reasonable compromise between the rights of the community and those of the landowners'. The power was deliberately bounded: price control within designated development areas only, not a general acquisition power. That is Intervention 2, proposed by a serving High Court judge, in an official report commissioned by the Irish state, more than fifty years ago. The Kenny Report's majority concluded that the increase in land value arising from community decisions (zoning, servicing, planning) belonged in substantial part to the community that created it.
 
 The Kenny Report was never implemented. Successive governments cited constitutional doubts, and the recommendation was shelved through the very decades in which the rezoning windfalls documented in Section 5, and the political corruption around rezoning later documented by the Mahon Tribunal — accumulated. The fifty-year gap between the state's own diagnosis and the present day isn’t evidence that the proposal is unworkable. It is the longest-running example of the pattern this report documents in Section 7: an analytically sound intervention, formally recommended through official channels, defeated not by counter-argument but by the organised interest of those who benefit from its absence. Every euro of the €619,000-per-acre Dublin rezoning differential quantified in Section 5 is a euro the Kenny Report told the Irish state how to capture before most of the current Dáil was born.
 
@@ -54,7 +54,7 @@ Nor did the official record fall silent after 1973. The Commission on Taxation (
 
 The standard objection — that Kenny-type measures would violate the private property protections of Articles 40.3.2 and 43 of the Constitution — has been formally examined twice, and the examination doesn’t support the objection. First, in the Article 26 reference on the Planning and Development Bill 1999, the Supreme Court upheld Part V, the provision requiring developers to transfer up to 20% of land for social and affordable housing at existing use value rather than development value — as a constitutionally permissible delimitation of property rights in the interests of the common good. The Court accepted, unanimously, that the state may require landowners to forgo development uplift without compensation at full market value, where the objective is socially proportionate. That is the constitutional core of Interventions 1 and 2, and it has already survived the highest form of constitutional scrutiny available in Irish law.
 
-Second, the All-Party Oireachtas Committee on the Constitution examined the question directly in its Ninth Progress Report (Private Property (2004)) and concluded that a Kenny Report-style scheme of acquiring development land at existing use value plus a margin would be likely to withstand constitutional challenge, noting that Article 43 itself expressly subordinates property rights to 'the exigencies of the common good.' The constitutional objection to land value capture in Ireland is therefore not a settled legal barrier. It is an untested assertion, contradicted by the leading Supreme Court authority and by the Oireachtas's own constitutional review, that has been allowed to function as a veto for five decades because it was never in the interest of those invoking it to test it.
+Second, the All-Party Oireachtas Committee on the Constitution examined the question directly in its Ninth Progress Report — Private Property (published 7 April 2004) — and concluded that the Oireachtas enjoys a wide margin of appreciation in regulating property rights and that a Kenny-type designated-area scheme could be implemented without constitutional amendment, with contemporaneous reporting summarising the Committee's position as endorsing precisely what Kenny had recommended three decades earlier. The constitutional objection to land value capture in Ireland is therefore not a settled legal barrier. It is an untested assertion, contradicted by the leading Supreme Court authority and by the Oireachtas's own constitutional review, that has been allowed to function as a veto for five decades because it was never in the interest of those invoking it to test it.
 
 > *Sources: Committee on the Price of Building Land (Kenny Report), Stationery Office, 1973. Commission on Taxation Report 2009. NESC Council Report 145, Urban Development Land, Housing and Infrastructure: Fixing Ireland's Broken System, 2018. NESC Council Report 150, Housing Policy: Actions to Deliver Change, 2020. Housing Commission Report, May 2024. In re Article 26 and the Planning and Development Bill 1999 [2000] 2 IR 321. All-Party Oireachtas Committee on the Constitution, Ninth Progress Report: Private Property, 2004. Mahon Tribunal: Final Report of the Tribunal of Inquiry into Certain Planning Matters and Payments, 2012.*
 
@@ -122,7 +122,7 @@ The five interventions above all operate on the first of two available routes fo
 
 This matters for two reasons. First, it confirms the diagnosis from the opposite ideological direction: the market-liberal observation that planning scarcity creates the rent is the same observation as this report's, arrived at from the supply side. The disagreement between land value capture advocates and zoning liberalisers is a disagreement about remedy, not about mechanism, and either remedy, seriously implemented, dismantles the extraction system. Second, it defines the one position that is incoherent: defending discretionary planning scarcity while opposing capture of the rent that scarcity creates. That position — scarce permissions, privately captured uplift, publicly subsidised viability gaps — isn’t a market position or a planning position. It is simply the configuration that maximises developer surplus, and it is, precisely, the configuration Ireland operates.
 
-> *Japan zoning and Tokyo price stability: national zoning framework under the City Planning Act and Building Standard Act; the comparative literature on Tokyo housing supply elasticity is summarised in, e.g., OECD and academic analyses of Japanese land-use regulation. The 'two routes' framing is the authors' synthesis.*
+> *Japan zoning and Tokyo price stability: national zoning framework under the City Planning Act and Building Standard Act; the comparative literature on Tokyo housing supply elasticity is summarised in, e.g., OECD and academic analyses of Japanese land-use regulation. The 'two routes' framing is my synthesis.*
 
 ## 10. Conclusion: What the Evidence Demands
 
@@ -185,77 +185,79 @@ The structural interventions this report recommends aren’t politically easy. T
 
 
 ## 11. Unexplored Avenues and Open Questions
-
-A report of this kind has a duty to be explicit about what it hasn’t done. The findings in Sections 1 through 10 rest on data the author could obtain, query, and cross-validate within the resources of a single individual using public statistical platforms. Several lines of inquiry could not be completed for reasons of data availability, dataset granularity, or required administrative access. They are documented here because each is potentially as significant as anything currently in the report, because each is open to journalists, researchers, parliamentary committees and the relevant state bodies to take up, and because the absence of these analyses from the public record is itself part of the picture this report describes.
-
+ 
+A report of this kind has a duty to be explicit about what it hasn’t done. The findings in Sections 1 through 10 rest on data I could obtain, query, and cross-validate within the resources of a single individual using public statistical platforms. Several lines of inquiry could not be completed for reasons of data availability, dataset granularity, or required administrative access. They are documented here because each is potentially as significant as anything currently in the report, because each is open to journalists, researchers, parliamentary committees and the relevant state bodies to take up, and because the absence of these analyses from the public record is itself part of the picture this report describes.
+ 
 Where the obstacle is a CSO or Eurostat data gap,  the CSO accepts research data requests through its Researcher Microdata File programme and through direct correspondence with subject-matter units. Several of the avenues below could be opened by such a request from a Dáil committee, a university research centre, or an investigative outlet. The data exists. The published series doesn’t.
-
+ 
 ### 11.1  The Sub-Sector Granularity Gap (F411 vs F412 vs F43)
-
+ 
 Three independent datasets used in this report report Irish construction at NACE F level only, without breaking out development (F411) from building construction (F412) and specialised construction (F43).
-
-**FATS (Foreign Affiliates Statistics):** Section 7.10 documents that foreign-controlled construction enterprises in Ireland generated €1,096 million in gross operating surplus in 2022 at a 49.7% GOS/VA margin (twice the EU average), but the FATS series doesn’t split this between F411, F412 and F43. The foreign-controlled share of NACE F411 specifically (the question the report would ideally answer) can’t be determined from publicly available FATS. Eurostat should publish FATS at three-digit NACE granularity; absent that, the CSO could compile the breakdown from national-level returns on request.
-
-**NA013 (National Accounts by Institutional Sector):** Section 7.10 documents that NA013 shows corporate saving rising from €75bn (2015) to €151bn (2024) but doesn’t break out institutional sector accounts by NACE. The savings and investment behaviour of NACE F411 enterprises specifically — what share of the €8.167 billion GOS is retained domestically, distributed as dividends, or reinvested in productive assets — can’t be derived from publicly available CSO data other than through the Eurostat investment-rate proxy this report uses.
-
-**CSO Annual Enterprise Statistics (BAA12):** The CSO published BAA12 figures broken out by F411 and F412 through 2019. Subsequent vintages of the Annual Enterprise Statistics moved to broader NACE divisions, leaving the 2020–2024 employment series for F411 and F412 not directly published in the standard release. The CSO's SBS unit may release the underlying breakdown on request, which would convert several of this report's headcount inferences into directly cited figures.
-
+ 
+**FATS (Foreign Affiliates Statistics): ** Section 7.10 documents that foreign-controlled construction enterprises in Ireland generated €1,096 million in gross operating surplus in 2022 at a 49.7% GOS/VA margin (twice the EU average), but the FATS series doesn’t split this between F411, F412 and F43. The foreign-controlled share of NACE F411 specifically (the question the report would ideally answer) can’t be determined from publicly available FATS. Eurostat should publish FATS at three-digit NACE granularity; absent that, the CSO could compile the breakdown from national-level returns on request.
+ 
+**NA013 (National Accounts by Institutional Sector): ** Section 7.10 documents that NA013 shows corporate saving rising from €75bn (2015) to €151bn (2024) but doesn’t break out institutional sector accounts by NACE. The savings and investment behaviour of NACE F411 enterprises specifically — what share of the €8.167 billion GOS is retained domestically, distributed as dividends, or reinvested in productive assets — can’t be derived from publicly available CSO data other than through the Eurostat investment-rate proxy this report uses.
+ 
+**CSO Annual Enterprise Statistics (BAA12): ** The CSO published BAA12 figures broken out by F411 and F412 through 2019. Subsequent vintages of the Annual Enterprise Statistics moved to broader NACE divisions, leaving the 2020–2024 employment series for F411 and F412 not directly published in the standard release. The CSO's SBS unit may release the underlying breakdown on request, which would convert several of this report's headcount inferences into directly cited figures.
+ 
 A coordinated request to the CSO and to Eurostat for three-digit NACE granularity in FATS, NA013, and post-2019 BAA12 would resolve the largest single empirical gap in the report's framework. Each of these datasets is constructed from administrative returns that already contain the granularity required; what is missing is the decision to publish it.
-
+ 
 ### 11.2  The Corporation Tax Question
-
+ 
 This report quantifies €8.167 billion in NACE 411 gross operating surplus over the decade 2015–2024. GOS is a pre-tax measure. The question the report doesn’t answer is what share of that surplus is actually paid in corporation tax. Ireland's headline corporation tax rate is 12.5%; the effective rate paid by NACE 411 entities specifically is unknown from any publicly available source. Available reliefs include: capital allowances on construction assets; loss relief carried forward from the post-2008 crash period (potentially material for entities incorporated pre-2012); land trading treatment (whether land sales are taxed as trading income or capital gains, with attendant rate differences); group relief between related entities in vertically integrated structures; and the Section 110 securitisation regime where applicable to development financing vehicles. The interaction of these reliefs with the SPV-dominated corporate structure documented in Sections 2.6 and 6 could produce effective rates materially below the headline figure.
-
+ 
 The data sources that could answer this question aren’t in the public domain but are accessible: Revenue Commissioners' sectoral tax receipts by NACE division, published in aggregate but not by F411 specifically; CRO-filed annual accounts of the largest 50 NACE 411 entities by GOS contribution, which carry corporation tax disclosures; and Revenue's published statistics on the use of loss relief and land trading classifications. A parliamentary question to the Minister for Finance directing Revenue to disclose the effective corporation tax rate paid by NACE F411 over the 2015–2024 decade is the most direct route. If the effective rate is materially below 12.5%, the report acquires a second extraction finding: lightly taxed as well as uncaptured, with the planning rent privatised at one end and the corporation tax base eroded at the other.
-
+ 
 ### 11.3  The Uncommenced Permissions Stock
-
+ 
 Intervention 5 of Section 9 (Use-It-Or-Lose-It Planning Conditions) is currently justified on the principle established in Section 6 and in the British control case in the experimental section: that holders of planning permission have a financial incentive to control the rate of build-out below the rate at which permissions are issued. The empirical scale of this in Ireland isn’t currently quantified in the report. The relevant figure is the stock of residential planning permissions granted but not yet commenced, broken down by the year permission was granted, the developer holding the permission, and the local authority area.
-
+ 
 The data exists. Commencement notices are filed with local authorities and aggregated by the Department of Housing's monthly commencement notice releases. Planning permissions are recorded by each local authority and aggregated by An Bord Pleanála. The difference between the two (permissions granted that haven’t progressed to commencement) is calculable, and a quarterly time series of the uncommenced stock has been produced internally within the Department of Housing but isn’t, to this report's knowledge, published in a granular form that permits the absorption-rate analysis the Letwin Review and the UK CMA market study performed for the British market. A research request to the Department of Housing under the FOI Act for the uncommenced permissions stock by year and by holder, or a parliamentary question for the same, would convert the qualitative Intervention 5 argument into a quantified one. The Letwin finding — that large sites are built out at the local market absorption rate rather than the rate at which permissions are issued — is empirically testable for Ireland using data the state already collects.
-
+ 
 ### 11.4  The Judicial Review Narrative
-
-The most frequently advanced alternative explanation for delayed delivery in Irish housing is the judicial review (JR) of planning permissions. The claim — typically that 'a small number of objectors are blocking thousands of homes through the courts' — has been advanced by ministers, by industry representatives, and by sections of the media, and was used as the substantive policy rationale for the 2024 Planning and Development Act's restrictions on JR standing and costs. This report hasn’t engaged with the JR narrative because doing so requires data the author hasn’t been able to systematically obtain: the share of total residential planning permissions in a given year that are subject to JR; the share of those JRs that succeed, fail, settle, or lapse; and the share of total permitted residential units affected by JR proceedings.
-
+ 
+The most frequently advanced alternative explanation for delayed delivery in Irish housing is the judicial review (JR) of planning permissions. The claim — typically that 'a small number of objectors are blocking thousands of homes through the courts' — has been advanced by ministers, by industry representatives, and by sections of the media, and was used as the substantive policy rationale for the 2024 Planning and Development Act's restrictions on JR standing and costs. This report hasn’t engaged with the JR narrative because doing so requires data I haven't been able to systematically obtain: the share of total residential planning permissions in a given year that are subject to JR; the share of those JRs that succeed, fail, settle, or lapse; and the share of total permitted residential units affected by JR proceedings.
+ 
 An Bord Pleanála publishes annual statistics on JR cases, and the Courts Service publishes judgment data. The work of cross-referencing JR cases to specific permissions and to specific unit counts hasn’t, to this report's knowledge, been done systematically in the public domain. The available indications, drawn from spot-checking, suggest that JRs affect a small minority of permitted units in a given year, and that a substantial share of JRs that proceed to judgment are upheld (i.e. the planning decision is found to have been legally defective, not merely contested). If this is borne out by a systematic analysis, the JR narrative is empirically weak as an explanation for delivery shortfalls and the 2024 Act's restrictions would acquire a different character — as a removal of a check on legally defective planning decisions, rather than a removal of a delivery bottleneck. This is a discrete piece of empirical work, well within the scope of an academic or investigative team with access to the underlying case data.
-
+ 
 ### 11.5  The Residential Zoned Land Tax: A Live Empirical Test
-
+ 
 In November 2025 the Department of Housing published the final RZLT maps for 2026 implementation on data.gov.ie, identifying parcels of zoned and serviced land liable to the tax. Section 7.3 documents the lobbying history of the RZLT and its repeated deferral; the published 2026 maps now provide the first empirically tractable test of the tax in operation. The questions that can be answered from the published data alone include: how many hectares of zoned residential land are recorded as liable; how that compares to the Housing Commission's identified development land requirement; how the geographic distribution of liable land aligns with the residential price-to-income pressure mapped in Section 4.4; and which named entities hold the largest liable parcels (cross-referenced to Land Registry records). The questions that will become answerable as the tax progresses through 2026 are equally pointed: what share of liable parcels receive deferral or exemption, what share of the assessed levy is actually collected versus billed, and how the collection rate compares to the historical record of the Derelict Sites Levy and the Vacant Site Levy documented in Section 7.3.
-
+ 
 This is a piece of monitoring work that any of the following bodies could and arguably should undertake on an ongoing basis: the Comptroller and Auditor General as part of routine audit of departmental revenues; the Oireachtas Public Accounts Committee; the Parliamentary Budget Office; the Housing Commission as a follow-up to its 2024 report; or an investigative outlet building a public dataset. A live dashboard tracking RZLT liability, deferral, collection and revenue would convert the third-consecutive-non-enforcement pattern this report documents into either a vindicated prediction or a refuted one within twelve to eighteen months.
-
+ 
 > *Source for RZLT 2026 maps: Department of Housing, Local Government and Heritage, 'Residential Zoned Land Tax: Final Map for 2026', published on data.gov.ie (dataset id ee22550f-98ac-4fed-b8f8-c3e34a43e8c2).*
-
+ 
 ### 11.6  Other Open Questions
-
+ 
 The avenues above are the ones for which the report has identified specific datasets, specific data-holder bodies, and specific routes to resolution. Several further lines of inquiry are flagged here in shorter form as questions worth pursuing.
-
-**The pension fund question:** Who holds the equity of Ireland's listed homebuilders, and what share of dividends flows to Irish residents versus international institutional investors? Glenveagh and Cairn's shareholder registers are public; a systematic decomposition would quantify the often-invoked but rarely-evidenced claim that 'this is your pension'.
-
-**HBFI's loan book:** Home Building Finance Ireland's annual reports disclose total lending but not the distribution of loans by borrower size. An FOI request for the distribution of HBFI loans by recipient (with appropriate commercial-sensitivity redactions) would establish whether HBFI's lending is supporting small and medium developers (its stated purpose) or whether it is concentrated among the same large operators that have access to commercial bank finance.
-
-**Croí Cónaithe per-contract amounts:** Section 8.3 documents that the Department of Housing publishes the aggregate maximum funding envelope and the aggregate unit count under Croí Cónaithe, but not the per-contract amounts paid to individual developers. An FOI request, or a parliamentary question for the per-development subsidy breakdown, would close this transparency gap directly.
-
-**The vertical integration premium, quantified:** Section 6 documents the structural mechanism of profit transfer between F411 holding companies and F412 building subsidiaries within vertically integrated groups. The Glenveagh, Cairn and Lioncor accounts include inter-company transfer pricing in their related-party notes. A forensic accounting study across the largest five vertically integrated Irish homebuilders would quantify the developer-to-builder margin transfer the report currently characterises in principle.
-
-**International contractor margins on the same buildings:** BAM Ireland, Sisk and John Paul Construction operate as builders in Ireland under structurally identical contracts to those their parent companies operate in the Netherlands, the UK and elsewhere. A comparison of operating margins on equivalent project types, where the project data permits, would directly test the international contractor argument advanced in Section 5.3 against firm-level rather than national-level data.
-
-**The CSO's NACE F SBS methodology change in 2020–2022:** The Eurostat sbs_ovw_act series shows a step-change in NACE F411 'persons engaged' between 2020 (3,936) and 2022 (8,572). This report infers, in Section 2.5, that the change reflects a broadening of statistical scope at the CSO (likely the incorporation of subcontracted professional services into the persons-engaged definition). A direct query to the CSO's Structural Business Statistics unit confirming the methodological revision and its date would convert this from inference to documented fact.
-
+ 
+**The pension fund question: ** Who holds the equity of Ireland's listed homebuilders, and what share of dividends flows to Irish residents versus international institutional investors? Glenveagh and Cairn's shareholder registers are public; a systematic decomposition would quantify the often-invoked but rarely-evidenced claim that 'this is your pension'.
+ 
+**HBFI's loan book: ** Home Building Finance Ireland's annual reports disclose total lending but not the distribution of loans by borrower size. An FOI request for the distribution of HBFI loans by recipient (with appropriate commercial-sensitivity redactions) would establish whether HBFI's lending is supporting small and medium developers (its stated purpose) or whether it is concentrated among the same large operators that have access to commercial bank finance.
+ 
+**Croí Cónaithe per-contract amounts: ** Section 8.3 documents that the Department of Housing publishes the aggregate maximum funding envelope and the aggregate unit count under Croí Cónaithe, but not the per-contract amounts paid to individual developers. An FOI request, or a parliamentary question for the per-development subsidy breakdown, would close this transparency gap directly.
+ 
+**The vertical integration premium, quantified: ** Section 6 documents the structural mechanism of profit transfer between F411 holding companies and F412 building subsidiaries within vertically integrated groups. The Glenveagh, Cairn and Lioncor accounts include inter-company transfer pricing in their related-party notes. A forensic accounting study across the largest five vertically integrated Irish homebuilders would quantify the developer-to-builder margin transfer the report currently characterises in principle.
+ 
+**International contractor margins on the same buildings: ** BAM Ireland, Sisk and John Paul Construction operate as builders in Ireland under structurally identical contracts to those their parent companies operate in the Netherlands, the UK and elsewhere. A comparison of operating margins on equivalent project types, where the project data permits, would directly test the international contractor argument advanced in Section 5.3 against firm-level rather than national-level data.
+ 
+**Interest paid by NACE 411 — quantifying the second extraction layer:** GOS is measured before interest, so part of the developer surplus flows onward to financiers, largely foreign credit funds. No published statistic quantifies the interest actually paid by NACE F411 enterprises. The data exists in Revenue's corporation tax computations (interest deductions claimed) and would also fall out of the F41 institutional sector account recommended above. Quantifying it would split the 81% between the developer's equity and the capital stack above it, and establish how much of the planning rent exits the country as coupon payments.
+ 
+**The CSO's NACE F SBS methodology change in 2020–2022: ** The Eurostat sbs_ovw_act series shows a step-change in NACE F411 'persons engaged' between 2020 (3,936) and 2022 (8,572). This report infers, in Section 2.5, that the change reflects a broadening of statistical scope at the CSO (likely the incorporation of subcontracted professional services into the persons-engaged definition). A direct query to the CSO's Structural Business Statistics unit confirming the methodological revision and its date would convert this from inference to documented fact.
+ 
 ### 11.7  What This Section Is and Is Not
-
+ 
 None of the avenues above invalidate any finding in the preceding ten sections. The Section 2 distributional finding, the Section 4 EU benchmarking, the Section 5 land price mechanism, the Section 7 capture documentation, and the Section 8 case study each rest on data that is in the public domain, has been cited to its primary source, and has been cross-validated where multiple datasets permit. The unexplored avenues would, in each case, add further granularity, further confirmation, or further dimensions of the same picture. They wouldn’t refute it.
-
-The reason to document them explicitly is twofold. First, intellectual honesty: a report that claims completeness it doesn’t possess invites attack on grounds that have nothing to do with its substantive findings. Second, the architecture of public scrutiny: each of these avenues is a question some specific body — Revenue, the CSO, Eurostat, the C&AG, the Department of Housing, the Oireachtas — has the standing and the data to answer. Naming them is the simplest possible form of accountability journalism: writing down the questions, in public, so they can be put. The author would welcome correspondence from anyone pursuing any of these lines.
-
+ 
+The reason to document them explicitly is twofold. First, intellectual honesty: a report that claims completeness it doesn’t possess invites attack on grounds that have nothing to do with its substantive findings. Second, the architecture of public scrutiny: each of these avenues is a question some specific body — Revenue, the CSO, Eurostat, the C&AG, the Department of Housing, the Oireachtas — has the standing and the data to answer. Naming them is the simplest possible form of accountability journalism: writing down the questions, in public, so they can be put. I would welcome correspondence from anyone pursuing any of these lines.
+ 
 ## Appendix A: Complete Eurostat Source Data
-
+ 
 ### A.1  NACE F41.1 — GOR and GOS/GVA, 2021–2023 (sbs_ovw_act)
-
+ 
 The table below reproduces the three-year series for key countries directly from Eurostat sbs_ovw_act (DATAFLOW: ESTAT:SBS_OVW_ACT(1.0), updated 10/03/2026). These are exact values from the dataset download. No figure is estimated or derived.
-
+ 
 | Country | GOR 2021 | GOS/GVA 2021 | GOR 2022 | GOS/GVA 2022 | GOR 2023 | GOS/GVA 2023 |
 | --- | --- | --- | --- | --- | --- | --- |
 | Denmark | 2.08% | 17.8% | -8.40% | -232.7% | -0.35% | -2.9% |
@@ -268,37 +270,59 @@ The table below reproduces the three-year series for key countries directly from
 | Germany | 21.81% | 71.7% | 16.31% | 62.9% | 9.85% | 50.7% |
 | France | 7.81% | 49.1% | 8.34% | 50.6% | 6.66% | 43.4% |
 | Netherlands | 21.29% | 70.0% | 19.93% | 66.4% | 20.15% | 66.0% |
-
+ 
 > *Source: Eurostat sbs_ovw_act, DATAFLOW ESTAT:SBS_OVW_ACT(1.0), last updated 10/03/2026. Indicators: GOR_PC and GOS_AV_PC. NACE: F41.1. All values are direct dataset downloads.*
-
+ 
 ### A.2  Data Source Registry
+ 
+| Source | What it is / used for | Link |
+|---|---|---|
+| CSO CNAPA01 | Construction national accounts — GVA, GOS, COE, GMI by NACE 411/412/432. The report's core dataset | data.cso.ie/table/CNAPA01 |
+| CSO BAA12 | Annual enterprise statistics — F411/F412 employment split to 2019 | data.cso.ie/table/BAA12 |
+| CSO ARA02 | Agricultural land prices (the rezoning baseline) | data.cso.ie/table/ARA02 |
+| CSO RZLPA01 | Residentially zoned land prices, transactions, volumes (Frontier Series) | data.cso.ie/table/RZLPA01 |
+| CSO NA013 | Institutional sector accounts — corporate saving vs B&C capital formation | data.cso.ie/table/NA013 |
+| CSO GPIIA04 / GPIIA05 | Gross household income (affordability denominators) | data.cso.ie/table/GPIIA04 · /GPIIA05 |
+| CSO HPM03 | Residential property price index / median prices | data.cso.ie/table/HPM03 |
+| CSO DEA08 | Earnings data | data.cso.ie/table/DEA08 |
+| Eurostat sbs_ovw_act | Structural Business Statistics — GOS/GVA, WALP, investment, wages, enterprises for F411/F412, all EU countries | ec.europa.eu/eurostat/databrowser/view/sbs_ovw_act |
+| Eurostat fats_activ | Foreign Affiliates Statistics — foreign-controlled construction (NACE F) | ec.europa.eu/eurostat/databrowser/view/fats_activ |
+| Eurostat tps00001 | Population (per-capita denominators) | ec.europa.eu/eurostat/databrowser/view/tps00001 |
+| CSO Business in Ireland 2020 | Table 9.6 — EU27 construction GOS/turnover comparison (the "aggregation camouflage" finding) | cso.ie/en/releasesandpublications/ep/p-bii/businessinireland2020/internationalcomparisons |
+| Kenny Report (1973) | Committee on the Price of Building Land — existing-use +25% in designated areas | No official digital copy; scans circulate via university repositories and JCFJ — archive whichever copy you cite |
+| Ninth Progress Report (2004) | All-Party Oireachtas Committee on the Constitution — Private Property; constitutional clearance for Kenny-type scheme | universityofgalway.ie/media/housinglawrightsandpolicy/nationalpolicy/9th-Report-Property.pdf |
+| Part V Article 26 reference | In re Art. 26 & Planning and Development Bill 1999 [2000] 2 IR 321 — full judgment | bailii.org/ie/cases/IESC/2000/20.html |
+| NESC Reports 145 (2018) & 150 (2020) | Land system diagnosis; LVC/SVT/active land management recommendations | nesc.ie → Publications (search report number) |
+| Commission on Taxation 2009 | SVT "strong economic rationale" (and 1982 edition for the betterment tax) | gov.ie — Department of Finance publications archive |
+| Housing Commission Report (2024) | State land value sharing recommendation; deficit estimate | gov.ie — search "Report of The Housing Commission" |
+| SCSI Real Costs of New Apartment Delivery 2025 | The cost stack, viability hurdle, "gap closed" headline (you hold the PDF) | scsi.ie → Publications |
+| CMA Housebuilding Market Study (Feb 2024) | Absorption-rate finding; 1m+ plots; speculative model | gov.uk/cma-cases/housebuilding-market-study |
+| CMA commitments (Oct 2025) | £100m settlement, seven housebuilders | gov.uk — CMA case "Housebuilders: suspected anti-competitive conduct" |
+| Letwin Review (2018) | Independent Review of Build Out — market absorption rate | gov.uk/government/publications/independent-review-of-build-out-final-report |
+| Glenveagh FY2025 results + RNS | Revenue, margins, landbank <10% NDV, Partnerships, Marina Depot/LDA RNS | glenveagh.ie/investors (RNS also on investegate.co.uk) |
+| gov.ie Croí Cónaithe approvals | Blackrock Villas 274-unit approval press release | gov.ie press release "Minister O'Brien announces approvals under Croí Cónaithe Cities" |
+| Housing Agency — Croí Cónaithe | Scheme administration, third-call project list | housingagency.ie/news-events/croi-conaithe-cities-third-call-expressions-interest |
+| MyHome Blackrock Villas listing | Live prices €233,000–€437,500 (ref 4918029) — **screenshot now, listings vanish** | myhome.ie/residential/brochure/blackrock-villas-blackrock-villas-blackrock-cork/4918029 |
+| RZLT Final Map 2026 | Liable parcels — the live empirical test in 11.5 | data.gov.ie dataset ee22550f-98ac-4fed-b8f8-c3e34a43e8c2 |
+| HBFI | State development lender — products, rates (4.75–7.5% over Euribor), annual reports | hbfi.ie/products/small-developments |
+| Dept of Finance development finance report | Bank caution, non-bank lenders up the risk curve | assets.gov.ie/296388 (PDF) |
+| Register of Lobbying | The 61-representations data, RZLT lobbying returns | lobbying.ie |
+| ESA 2010 manual | GOS pre-interest definition (§8.18–8.22) | ec.europa.eu/eurostat → ESA 2010 publication |
 
-**CSO CNAPA01:** National Accounts, Construction Perspective. Primary source for 10-year Irish value margin (GOS/GVA) series, absolute GOS, COE, and GMI figures. Published September 2025 (Frontier Series Output). data.cso.ie/table/CNAPA01.
 
-**CSO BAA12:** Annual Enterprise Survey, Building & Construction Inquiry. Source for Irish GOR (GOS/Turnover) and enterprise employment data. Submitted to Eurostat as Ireland's contribution to sbs_ovw_act.
-
-**Eurostat sbs_ovw_act:** Structural Business Statistics by NACE activity. DATAFLOW: ESTAT:SBS_OVW_ACT(1.0). Updated 10/03/2026. EU Regulation 2019/2152. Indicators used: GOR_PC, GOS_AV_PC, GOS_MEUR, AV_MEUR (Value Added), EMP_NR (Persons Engaged), ENT_NR (Enterprises), NETTUR_MEUR (Turnover). All cross-country figures in this report, including employment and enterprise counts in Section 2.5.
-
-**CSO ARA02:** Agricultural Land Prices, annual statistical releases 2019–2024. Primary source for agricultural land price baseline in Section 5.
-
-**CSO RZLPA01:** Residentially Zoned Land Prices, published 05 November 2025 (Frontier Series Output). Primary source for residential zoned land prices in Section 5.
-
-**Eurostat Housing in Europe 2024:** Ireland house prices 101% above EU average; rent increase data (prc_hicp_midx).
-
-**CSO ALIA03:** Aircraft Leasing. Annual profit and revenue data. Cross-sector benchmark.
-
+ 
 ### A.3  Glossary
-
-**GOS/GVA (Value Margin):** Share of newly created economic value retained as corporate surplus. 81% means workers receive 19 cents and capital retains 81 cents per euro of new wealth created.
-
-**GOR — Gross Operating Rate (GOS/Turnover):** GOS as a percentage of total revenue. Eurostat's primary cross-country comparability metric.
-
-**COE (Compensation of Employees):** Total labour cost to enterprises — wages, salaries, and employer social contributions. Used in Section 2.3 to calculate labour-capital ratios.
-
-**GMI (Gross Mixed Income):** Income of self-employed persons. Used in Section 2.4 to separate sole-trader income from corporate profit within NACE 411.
-
-**NACE F41.1 — Development of Building Projects:** Entities that acquire land, obtain planning permission, and develop or sell sites.
-
-**NACE F41.2 — Construction of Residential & Non-Residential Buildings:** Physical contractors who construct structures.
-
-**Rezoning Uplift:** The increase in land value generated by a change in planning designation from agricultural to residential. Quantified in Section 5 using CSO primary data (ARA02 & RZLPA01) at 18–27× nationally and 64× in Dublin (2024).
+ 
+**GOS/GVA (Value Margin): ** Share of newly created economic value retained as corporate surplus. 81% means workers receive 19 cents and capital retains 81 cents per euro of new wealth created.
+ 
+**GOR — Gross Operating Rate (GOS/Turnover): ** GOS as a percentage of total revenue. Eurostat's primary cross-country comparability metric.
+ 
+**COE (Compensation of Employees): ** Total labour cost to enterprises — wages, salaries, and employer social contributions. Used in Section 2.3 to calculate labour-capital ratios.
+ 
+**GMI (Gross Mixed Income): ** Income of self-employed persons. Used in Section 2.4 to separate sole-trader income from corporate profit within NACE 411.
+ 
+**NACE F41.1 — Development of Building Projects: ** Entities that acquire land, obtain planning permission, and develop or sell sites.
+ 
+**NACE F41.2 — Construction of Residential & Non-Residential Buildings: ** Physical contractors who construct structures.
+ 
+**Rezoning Uplift: ** The increase in land value generated by a change in planning designation from agricultural to residential. Quantified in Section 5 using CSO primary data (ARA02 & RZLPA01) at 18–27× nationally and 64× in Dublin (2024).
