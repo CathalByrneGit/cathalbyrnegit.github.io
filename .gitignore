@@ -1,0 +1,27 @@
+# ── R session artefacts ──────────────────────────────────
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+
+# ── Build / deploy staging ───────────────────────────────
+_site/
+
+# ── OS / editor noise ────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Local tool settings ──────────────────────────────────
+.claude/
+
+# ════════════════════════════════════════════════════════
+# DELIBERATELY TRACKED (do not add these):
+#   posts/*/data/*.rds      frozen primary data — the
+#   posts/*/data/csv/       evidentiary record the report
+#   posts/*/data/MANIFEST.csv   promises readers
+#   *.html, *__files/       committed outputs; CI may skip
+#                           rebuilding unchanged posts
+#   website.Rproj           project file (small, harmless)
+# ════════════════════════════════════════════════════════
+.positai
