@@ -265,7 +265,7 @@ bump_data <- eurostat_raw_labelled |>
   filter(
     var == "Share of gross operating surplus in value added - percentage",
     nace_code == 411,
-    year <2024
+    year < 2024
   ) |>
   group_by(year) |>
   mutate(rank = rank(-value, ties.method = "first"),
@@ -275,36 +275,39 @@ bump_data <- eurostat_raw_labelled |>
          year = as.integer(year)) |>
   ungroup()
 
-# Define the countries you want to keep
-selected_countries <- c("Ireland", "EU27", "France", "Germany", "Spain", "Italy","Malta","Poland","Belgium","Denmark","Sweden","Iceland","Norway","Romania")
+selected_countries <- c("Ireland", "EU27", "France", "Germany", "Spain", "Italy",
+                        "Malta", "Poland", "Belgium", "Denmark", "Sweden",
+                        "Iceland", "Norway", "Romania")
 
 bump_data_filtered <- bump_data |>
   filter(geo %in% selected_countries)
 
-# 2. Plotting
 ggplot(bump_data_filtered, aes(x = year, y = rank, color = geo)) +
-  geom_bump(size = 1.5) +
-  geom_point(size = 3) +
-  # Use geom_text_repel for clean labels at the end of the lines
+  geom_line(linewidth = 1.5, alpha = 0.85) +
+  geom_point(size = 2) +
   geom_text_repel(
     data = bump_data_filtered |> filter(year == max(year)),
     aes(label = geo),
     nudge_x = 0.5,
-    direction = "y"
+    direction = "y",
+    segment.color = NA
   ) +
   scale_y_reverse(breaks = 1:max(bump_data_filtered$rank)) +
-  scale_x_continuous(breaks = seq(min(bump_data_filtered$year), max(bump_data_filtered$year), 1)) +
+  scale_x_continuous(
+    breaks = seq(min(bump_data_filtered$year), max(bump_data_filtered$year), 1),
+    expand = expansion(mult = c(0.02, 0.15))
+  ) +
   theme_minimal() +
   labs(
     title = "Rank Change: Share of GOS in Value Added (NACE 411)",
     subtitle = "Developer (NACE 411) Gross Value Figures - CSO/Eurostat Comparison",
-    x = 'Year',
+    x = "Year",
     y = "Rank",
-    caption = "*Sources: Developer Value Margin (GOS/GVA)  EU-27 GOS/GVA and Ireland GOS/GVA (Eurostat columns): Eurostat sbs_ovw_act indicator GOS_AV_PC, NACE F41.1, updated 10/03/2026. <br> — Not all countries shown for display puposes*"
+    caption = "*Sources: Developer Value Margin (GOS/GVA), EU-27 and Ireland GOS/GVA: Eurostat sbs_ovw_act indicator GOS_AV_PC, NACE F41.1, updated 10/03/2026. <br> — Not all countries shown for display purposes*"
   ) +
   theme(
     legend.position = "none",
-    plot.caption = element_markdown(hjust = 0), # requires 'ggtext' package
+    plot.caption = element_markdown(hjust = 0),
     panel.grid.minor = element_blank()
   )
 ```

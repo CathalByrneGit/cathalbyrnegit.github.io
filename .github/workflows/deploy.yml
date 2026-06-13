@@ -4,9 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Daily at 06:30 UTC — publishes any post whose date has arrived.
-    # Posts dated in the future are excluded from deployment below,
-    # so the whole series can sit on main and release itself.
+    # Daily at 06:30 UTC — re-runs the build so the staged-release date
+    # filter re-evaluates and the day's post appears.
     - cron: "30 6 * * *"
   workflow_dispatch:
 
@@ -31,18 +30,14 @@ jobs:
               yihui = 'https://yihui.r-universe.dev',
               CRAN  = 'https://cloud.r-project.org'
             ))
-            if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes')
-            remotes::install_github('davidsjoberg/ggbump')
-            pkgs <- c('litedown', 'lt', 'gglite', 'xfun',"csodata","eurostat","dplyr","tidyr","stringr","ggplot2","ggrepel","ggtext")
+            pkgs <- c(
+              'litedown', 'lt', 'gglite', 'xfun',
+              'csodata', 'eurostat',
+              'dplyr', 'tidyr', 'stringr',
+              'ggplot2', 'ggrepel', 'ggtext'
+            )
             install.packages(pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)])
           "
-
-      # Git checkouts don't preserve mtimes, so litedown's 'outdated'
-      # heuristic is unreliable on CI. Force the listing page to rebuild
-      # every run so the date filter in posts/index.Rmd re-evaluates
-      # against today's date.
-      - name: Force listing rebuild
-        run: touch posts/index.Rmd index.Rmd
 
       - name: Build site
         run: Rscript build.R

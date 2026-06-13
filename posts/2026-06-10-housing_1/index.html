@@ -311,7 +311,7 @@ bump_data &lt;- eurostat_raw_labelled |&gt;
   filter(
     var == &quot;Share of gross operating surplus in value added - percentage&quot;,
     nace_code == 411,
-    year &lt;2024
+    year &lt; 2024
   ) |&gt;
   group_by(year) |&gt;
   mutate(rank = rank(-value, ties.method = &quot;first&quot;),
@@ -321,41 +321,41 @@ bump_data &lt;- eurostat_raw_labelled |&gt;
          year = as.integer(year)) |&gt;
   ungroup()
 
-# Define the countries you want to keep
-selected_countries &lt;- c(&quot;Ireland&quot;, &quot;EU27&quot;, &quot;France&quot;, &quot;Germany&quot;, &quot;Spain&quot;, &quot;Italy&quot;,&quot;Malta&quot;,&quot;Poland&quot;,&quot;Belgium&quot;,&quot;Denmark&quot;,&quot;Sweden&quot;,&quot;Iceland&quot;,&quot;Norway&quot;,&quot;Romania&quot;)
+selected_countries &lt;- c(&quot;Ireland&quot;, &quot;EU27&quot;, &quot;France&quot;, &quot;Germany&quot;, &quot;Spain&quot;, &quot;Italy&quot;,
+                        &quot;Malta&quot;, &quot;Poland&quot;, &quot;Belgium&quot;, &quot;Denmark&quot;, &quot;Sweden&quot;,
+                        &quot;Iceland&quot;, &quot;Norway&quot;, &quot;Romania&quot;)
 
 bump_data_filtered &lt;- bump_data |&gt;
   filter(geo %in% selected_countries)
 
-# 2. Plotting
 ggplot(bump_data_filtered, aes(x = year, y = rank, color = geo)) +
-  geom_bump(size = 1.5) +
-  geom_point(size = 3) +
-  # Use geom_text_repel for clean labels at the end of the lines
+  geom_line(linewidth = 1.5, alpha = 0.85) +
+  geom_point(size = 2) +
   geom_text_repel(
     data = bump_data_filtered |&gt; filter(year == max(year)),
     aes(label = geo),
     nudge_x = 0.5,
-    direction = &quot;y&quot;
+    direction = &quot;y&quot;,
+    segment.color = NA
   ) +
   scale_y_reverse(breaks = 1:max(bump_data_filtered$rank)) +
-  scale_x_continuous(breaks = seq(min(bump_data_filtered$year), max(bump_data_filtered$year), 1)) +
+  scale_x_continuous(
+    breaks = seq(min(bump_data_filtered$year), max(bump_data_filtered$year), 1),
+    expand = expansion(mult = c(0.02, 0.15))
+  ) +
   theme_minimal() +
   labs(
     title = &quot;Rank Change: Share of GOS in Value Added (NACE 411)&quot;,
     subtitle = &quot;Developer (NACE 411) Gross Value Figures - CSO/Eurostat Comparison&quot;,
-    x = 'Year',
+    x = &quot;Year&quot;,
     y = &quot;Rank&quot;,
-    caption = &quot;*Sources: Developer Value Margin (GOS/GVA)  EU-27 GOS/GVA and Ireland GOS/GVA (Eurostat columns): Eurostat sbs_ovw_act indicator GOS_AV_PC, NACE F41.1, updated 10/03/2026. &lt;br&gt; — Not all countries shown for display puposes*&quot;
+    caption = &quot;*Sources: Developer Value Margin (GOS/GVA), EU-27 and Ireland GOS/GVA: Eurostat sbs_ovw_act indicator GOS_AV_PC, NACE F41.1, updated 10/03/2026. &lt;br&gt; — Not all countries shown for display purposes*&quot;
   ) +
   theme(
     legend.position = &quot;none&quot;,
-    plot.caption = element_markdown(hjust = 0), # requires 'ggtext' package
+    plot.caption = element_markdown(hjust = 0),
     panel.grid.minor = element_blank()
   )
-</code></pre>
-<pre><code class="language-plain warning">#&gt; Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-#&gt; Please use `linewidth` instead.
 </code></pre>
 <p><img src="index__files/chunk-6-1.png" alt="" /></p>
 <p><strong>Second — per-capita extraction isn’t compressing:</strong> Ireland’s €199 per person in F41.1 developer surplus (2022 Eurostat) against the EU average of €49 is a structural measure, not a cyclical one. France generates €60 per capita, Germany €46. These aren’t countries whose developer sectors have been recently compressed by interest rate cycles; they have structurally different institutional arrangements. The per-capita gap reflects institutional design, not macroeconomic conditions.</p>
