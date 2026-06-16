@@ -12,7 +12,7 @@ output:
 #| echo = FALSE,
 #| results = 'hide',
 #| message = FALSE
-packages <- c("lt","csodata","gglite","eurostat","dplyr","tidyr","stringr","ggbump","ggplot2","ggrepel","ggtext")
+packages <- c("lt","csodata","gglite","eurostat","dplyr","tidyr","stringr","ggplot2","ggrepel","ggtext")
 
 lapply(packages, require, character.only = TRUE)
 ```
@@ -307,7 +307,7 @@ ggplot(bump_data_filtered, aes(x = year, y = rank, color = geo)) +
   ) +
   theme(
     legend.position = "none",
-    plot.caption = element_markdown(hjust = 0),
+    plot.caption = ggtext::element_markdown(hjust = 0),
     panel.grid.minor = element_blank()
   )
 ```
