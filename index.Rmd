@@ -2,9 +2,9 @@
 title: "Noot-Noot"
 ---
 
-> To learn which questions are unanswerable, and not to answer them
+> Round and round we spin, with feet of lead and wings of tin.
 >
->  &mdash;  Ursula K.Le Guin                                        
+>  &mdash;  Kurt Vonnegut                                       
 
 Welcome. I write about a random assortment of topics —
 data, R, statistics, and Ireland (in all its vices and virtues).
