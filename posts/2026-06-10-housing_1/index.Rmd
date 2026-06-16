@@ -307,7 +307,7 @@ ggplot(bump_data_filtered, aes(x = year, y = rank, color = geo)) +
   ) +
   theme(
     legend.position = "none",
-    plot.caption = ggtext::element_markdown(hjust = 0),
+    plot.caption = element_text(hjust = 0),
     panel.grid.minor = element_blank()
   )
 ```
