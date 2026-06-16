@@ -27,6 +27,9 @@ jobs:
         with:
           r-version: release
 
+      - name: System dependencies
+        run: sudo apt-get update && sudo apt-get install -y libfreetype6-dev libpng-dev libjpeg-dev libtiff5-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev
+       
       - name: Install R packages
         run: |
           Rscript -e "
