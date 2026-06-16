@@ -4,18 +4,22 @@ on:
   push:
     branches: [main]
   schedule:
-    # Daily at 06:30 UTC — re-runs the build so the staged-release date
-    # filter re-evaluates and the day's post appears.
     - cron: "30 6 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent overlapping deploys; let a running one finish.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -30,19 +34,15 @@ jobs:
               yihui = 'https://yihui.r-universe.dev',
               CRAN  = 'https://cloud.r-project.org'
             ))
-            pkgs <- c(
-              'litedown', 'lt', 'gglite', 'xfun',
-              'csodata', 'eurostat',
-              'dplyr', 'tidyr', 'stringr',
-              'ggplot2', 'ggrepel', 'ggtext'
-            )
+            pkgs <- c('litedown','lt','gglite','xfun','csodata','eurostat',
+                      'dplyr','tidyr','stringr','ggplot2','ggrepel','ggtext')
             install.packages(pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)])
           "
 
       - name: Build site
         run: Rscript build.R
 
-      - name: Stage for deployment (excluding future-dated posts)
+      - name: Stage (excluding future-dated posts)
         run: |
           TODAY=$(date -u +%F)
           EXCLUDES=""
@@ -50,26 +50,28 @@ jobs:
             name=$(basename "$d")
             postdate=$(echo "$name" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}' || true)
             if [ -n "$postdate" ] && [ "$postdate" \> "$TODAY" ]; then
-              echo "Holding back (dated $postdate): $name"
+              echo "Holding back: $name"
               EXCLUDES="$EXCLUDES --exclude=posts/$name/"
             fi
           done
-
           mkdir -p _site
           rsync -av \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='.claude/' \
-            --exclude='*.Rmd' \
-            --exclude='*.R' \
-            --exclude='_litedown.yml' \
-            --exclude='*.Rproj' \
-            --exclude='_site/' \
-            $EXCLUDES \
-            . _site/
+            --exclude='.git/' --exclude='.github/' --exclude='.claude/' \
+            --exclude='*.Rmd' --exclude='*.R' --exclude='_litedown.yml' \
+            --exclude='*.Rproj' --exclude='_site/' \
+            $EXCLUDES . _site/
           touch _site/.nojekyll
 
-      - uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
