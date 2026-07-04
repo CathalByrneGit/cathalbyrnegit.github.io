@@ -48,6 +48,6 @@ for (dir in dirs) {
   
   }
   
-  cat(sprintf("*[%s](%s/index.html)* &mdash; %s<br>", title, dir, date))
+  cat(sprintf("*[%s](%s/index.html)* &mdash; %s<br>\n", title, dir, date))
 }
 ```
