@@ -34,12 +34,16 @@ body {
 }
 
 /* ── Remove @article card boxes ──────────────────────── */
+/* Only strip the visual "card" chrome (background/border/shadow).
+   @article puts the page's actual reading gutter (left/right margin)
+   inside this padding — the outer <body> itself has none on narrow
+   viewports, so zeroing this too collapses the gutter to nothing on
+   phones, even though desktop still looks fine (auto-centering inside
+   max-width masks it there). Keep the theme's own padding/margin. */
 .frontmatter, .body {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
 /* ── Typography ───────────────────────────────────────── */
