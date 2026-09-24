@@ -135,7 +135,7 @@ table:not([class]) tr:nth-child(even) {
 
 /* ── Nav ──────────────────────────────────────────────── */
 body > nav {
-  padding: 0.7em 0;
+  padding: 0.7em 1em;
   margin-bottom: 2.5em;
   border-bottom: 1px solid var(--border);
 }
