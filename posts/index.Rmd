@@ -28,11 +28,13 @@ for (dir in dirs) {
   post_year <- as.numeric(strsplit(meta$date, "-", fixed = TRUE)[[1]][1])
 
   if (is.null(year) || post_year != year) {
+    if (!is.null(year)) cat("\n:::\n\n")
     year <- post_year
-    cat(sprintf("## %s\n", year))
+    cat(sprintf("\n## %s\n\n::: {.post-list}\n\n", year))
   }
 
-  cat(sprintf("*[%s](%s/index.html)* &mdash; %s%s<br>\n",
-              meta$title, dir, meta$date, tag_links_md(meta$tags)))
+  cat(sprintf("- %s [%s](%s/index.html)%s\n",
+              meta$date, meta$title, dir, tag_links_md(meta$tags)))
 }
+if (!is.null(year)) cat("\n:::\n")
 ```
