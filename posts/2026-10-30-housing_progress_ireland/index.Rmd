@@ -1,0 +1,52 @@
+---
+title: "A Note on Progress Ireland: Agreement, Disagreement, and the Transparency Problem"
+tags: ["Irish Housing"]
+date: 2026-10-30
+output:
+  html:
+    meta:
+      css: ["@default", "@article", "@callout"]
+      js: ["@copy-button", "@fold-details", "@callout", "@sidenotes", "@appendix"]
+---
+
+*An update to "The Architecture of Profit." This note engages directly with the work of the think tank Progress Ireland — where this report's analysis agrees with theirs, where it disagrees, and a structural concern about how the organisation operates. It is added here rather than folded into the main series because it responds to work and reporting published after the series went up.*
+
+---
+
+## Agreement
+
+This report's analysis converges closely with work published by the think tank Progress Ireland, and the convergence is worth naming because the disagreement that follows is sharper for it.
+
+On the central mechanism, we agree. Their October 2026 analysis of housing-infrastructure funding reaches the same object this report documents: the rezoning uplift from roughly €60,000 to €1.6 million per hectare in Dublin in 2024, a 27-fold increase their author describes as created mostly by a public decision and public investment. That's this report's land-value-capture argument in different words and from the same CSO sources. Their proposed remedy, land readjustment — pooling land in a development area, replotting it, and using reserve land to fund the infrastructure — is one of the more concrete operationalisations of the Kenny-report principle available in current Irish policy writing. Where this report documents *what* is captured and establishes that no official body has measured it, their work supplies part of the *how* of giving it back. On that terrain they're allies, and good ones.
+
+## Disagreement, part one: the policy
+
+The agreement makes two disagreements worth stating plainly. The first is a matter of policy.
+
+Progress Ireland was the most prominent advocate for the planning exemption for back-garden modular dwellings — the "shedsits" or garden cabins exempted, as of April 2026, not only from planning permission but, via extension of the rent-a-room scheme, from the oversight of the Residential Tenancies Board. The think tank projected the measure could deliver up to 350,000 homes.
+
+This report regards it as the weakest kind of housing policy: one whose costs fall almost entirely on the people it claims to serve. The Irish Planning Institute raised eight distinct objections, including that the units would migrate into short-term letting and that garden-plot potential would raise house prices against first-time buyers. Threshold and housing academics warned that renting these units out would be near-impossible to police for standards, and opposition leaders across three parties characterised the measure as a return to tenement and bedsit conditions.
+
+A policy that removes both the planning check and the tenancy-standards check, and routes the gain to the owner of the garden while the renter absorbs the risk, is a political win an advocate can point to precisely because its costs are diffuse, deferred, and borne by tenants with the least power to refuse them. It adds a line to a delivery chart; it doesn't add a line to the stock of housing anyone should have to live in. On the framework of this report, it's the supply-at-any-quality instinct detached from the distributional question of who bears the cost, which is the instinct this entire report exists to interrogate.
+
+## Disagreement, part two: the transparency problem
+
+The second disagreement is structural, and it's more serious.
+
+A think tank funded by two billionaires who decline, under questioning from an Oireachtas committee, to disclose the scale of that funding, and which conducts a material part of its influence through private channels with senior officials, is operating in a manner this report's own subject matter should make the reader wary of.
+
+The record is specific. In December 2025, an assistant secretary general at the Department of Further and Higher Education sent a Progress Ireland staff member a confidential draft funding framework — the assessment criteria for university bids under a €750 million programme — marked, in the official's own words, for the recipient's review "on a strictly confidential basis," after a sister department had asked that it not be published. The think tank's board includes that official's former secretary general. In October 2026 it emerged that the Department of Housing's newly appointed housing tsar had met a Progress Ireland lobbyist and no record of the engagement was kept.
+
+These are not allegations; they're the documented findings of freedom-of-information requests. In fairness, the obligation to minute that meeting rested with the official and the department, not with the think tank, and Progress Ireland's lobbying returns are filed on the public register — the organisation is not wholly opaque, and part of what the record shows is a failure of official record-keeping rather than of the lobbyist. But taken together — undisclosed funding scale, a confidential draft routed through a board connection, an unminuted meeting with a newly empowered official — the pattern is one of concentrated, well-resourced interest securing privileged, low-visibility access to the people who write the rules. It is the collective-action asymmetry this report describes elsewhere, in a different suit.
+
+That the lobbying in question is in service of some policies this report *agrees* with doesn't change the objection. The test of a commitment to transparent, accountable policy-making is whether it survives contact with an ally. Opaque billionaire-funded access to officials is undemocratic when the Construction Industry Federation does it, and it is undemocratic when a think tank this report often agrees with does it.
+
+## Where this leaves us
+
+None of this is a reason to dismiss the organisation, and this report doesn't. Its research is frequently rigorous, its comparative range is genuinely useful, and on land value capture it's pushing in the direction the evidence supports. It can play a real and constructive role in Irish housing policy.
+
+But it will play that role better — and its arguments will carry the authority its research deserves — if it submits its funding and its official engagements to the same daylight it rightly asks of the planning system. An organisation that wants the state to capture privately held value for the public good should find it easy to let the public see who funds it and whom it meets.
+
+---
+
+> *Sources: Progress Ireland, "Ireland's way of funding housing infrastructure holds back supply. Other countries do it differently." (7 October 2026) and "How 1960s Paris built Europe's busiest rail line" (21 October 2026). Rezoning uplift figures: CSO ARA02 (agricultural land prices) and RZLPA01 (residentially zoned land prices), 2024. Garden-cabin planning exemption and rent-a-room extension: Irish Times, 21 and 26 April 2026; Irish Planning Institute submission as reported by Dublin Inquirer; Threshold and cross-party opposition commentary, April 2026; Progress Ireland's 350,000-homes projection as reported across Irish regional press, 2025–2026. Funding non-disclosure, confidential-draft disclosure, and unminuted meeting: The Ditch, "'On a strictly confidential basis': senior civil servant sent document to Collison brother-funded think tank" (18 May 2026) and "No department records of Collison-backed Progress Ireland and top civil servant meeting" (23 October 2026), both based on documents released under freedom-of-information legislation.*

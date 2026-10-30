@@ -1,6 +1,6 @@
 ---
 title: "The Permission and the Profit 2/7"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-06-11
 output:
   html:

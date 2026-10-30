@@ -1,6 +1,6 @@
 ---
 title: "The Archetecture Of Profit In Irish Housing 0/7"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-06-10
 output:
   html:

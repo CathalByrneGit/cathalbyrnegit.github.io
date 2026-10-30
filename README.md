@@ -30,16 +30,22 @@ Posts release daily. All figures are independently verifiable from the cited pri
 ```
 posts/
   YYYY-MM-DD-slug/
-    index.Rmd        source
+    index.Rmd        source — tags: ["..."] in frontmatter
     index.html       rendered (committed)
     data/            frozen primary data (rds + csv mirrors)
+tags/                generated — one page per tag, never committed
+  <slug>.Rmd/.html   e.g. tags/irish-housing.html
 assets/
   style.css          site theme
 data/
   refresh.R          the only place API calls live — run manually
+R/
+  tags.R             shared post-frontmatter/tag helpers
 _litedown.yml        site config
-build.R              local and CI build script
+build.R              local and CI build script — also generates tags/
 ```
+
+Each post's `tags:` frontmatter is rendered as clickable `#hashtag` links wherever the post is listed (homepage, `/posts/`), pointing at a generated archive page for that tag. Tag pages are rebuilt fresh from scratch on every build (see `R/tags.R`), so renaming or removing a tag never leaves a stale page behind.
 
 ## Data freeze
 
