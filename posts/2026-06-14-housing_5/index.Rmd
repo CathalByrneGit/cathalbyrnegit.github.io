@@ -1,6 +1,6 @@
 ---
 title: "€15 Million In, €525 Million Out5/7"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-06-14
 output:
   html:

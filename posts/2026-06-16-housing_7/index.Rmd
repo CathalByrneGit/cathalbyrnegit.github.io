@@ -1,6 +1,6 @@
 ---
 title: "The Oldest Idea in Economics 7/7"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-06-16
 output:
   html:

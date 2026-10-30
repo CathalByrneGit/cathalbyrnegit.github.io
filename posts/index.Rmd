@@ -5,6 +5,8 @@ title: Hmmmm
 All murmurings.
 
 ```{r echo=FALSE, results='asis'}
+source("../R/tags.R")
+
 dirs <- list.dirs(".", recursive = FALSE, full.names = FALSE)
 dirs <- sort(dirs[file.exists(file.path(dirs, "index.Rmd"))], decreasing = TRUE)
 
@@ -14,40 +16,23 @@ dirs <- sort(dirs[file.exists(file.path(dirs, "index.Rmd"))], decreasing = TRUE)
 dir_dates <- as.Date(substr(dirs, 1, 10), format = "%Y-%m-%d")
 dirs <- dirs[is.na(dir_dates) | dir_dates <= Sys.Date()]
 
+# Strict date order throughout — a post's tag is shown as a hashtag next
+# to it (linking to its /tags/ archive page) rather than grouping posts
+# under a heading, so a post never gets stranded under an earlier
+# occurrence of a shared tag.
 year <- NULL
-
-pre_theme <- NULL
 for (dir in dirs) {
-  lines <- readLines(file.path(dir, "index.Rmd"), n = 30, warn = FALSE)
-  delims <- which(lines == "---")
-  if (length(delims) < 2) next
-  yaml_lines <- lines[(delims[1] + 1):(delims[2] - 1)]
-  title <- sub('^title:\\s*[\'"]?(.+?)[\'"]?\\s*$', "\\1",
-               grep("^title:", yaml_lines, value = TRUE)[1])
-  date  <- sub("^date:\\s*(.+?)\\s*$", "\\1",
-               grep("^date:", yaml_lines, value = TRUE)[1])
-  
-  theme <- sub('^theme:\\s*[\'"]?(.+?)[\'"]?\\s*$', "\\1",
-               grep("^theme:", yaml_lines, value = TRUE)[1])
+  meta <- read_post_meta(file.path(dir, "index.Rmd"))
+  if (is.null(meta)) next
 
-  post_year <- strsplit(date,'-',3)[[1]][1]|>
-    as.numeric()
-  
-  if(is.null(year) || post_year!= year){
-    
+  post_year <- as.numeric(strsplit(meta$date, "-", fixed = TRUE)[[1]][1])
+
+  if (is.null(year) || post_year != year) {
     year <- post_year
-    
-    cat(sprintf("## %s\n",year))
+    cat(sprintf("## %s\n", year))
   }
-  
-  if(!is.na(theme) & (is.null(pre_theme)||pre_theme!=theme)){
-  
-    pre_theme = theme
-    
-    cat(sprintf("### %s\n",theme))
-  
-  }
-  
-  cat(sprintf("*[%s](%s/index.html)* &mdash; %s<br>\n", title, dir, date))
+
+  cat(sprintf("*[%s](%s/index.html)* &mdash; %s%s<br>\n",
+              meta$title, dir, meta$date, tag_links_md(meta$tags)))
 }
 ```

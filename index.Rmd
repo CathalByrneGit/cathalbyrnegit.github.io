@@ -12,6 +12,8 @@ data, R, statistics, and Ireland (in all its vices and virtues).
 ## Recent Thoughts
 
 ```{r echo=FALSE, results='asis'}
+source("R/tags.R")
+
 dirs <- list.dirs("posts", recursive = FALSE, full.names = FALSE)
 dirs <- sort(dirs[file.exists(file.path("posts", dirs, "index.Rmd"))], decreasing = TRUE)
 
@@ -22,15 +24,10 @@ dir_dates <- as.Date(substr(dirs, 1, 10), format = "%Y-%m-%d")
 dirs <- dirs[is.na(dir_dates) | dir_dates <= Sys.Date()]
 
 for (dir in head(dirs, 5)) {
-  lines <- readLines(file.path("posts", dir, "index.Rmd"), n = 30, warn = FALSE)
-  delims <- which(lines == "---")
-  if (length(delims) < 2) next
-  yaml_lines <- lines[(delims[1] + 1):(delims[2] - 1)]
-  title <- sub('^title:\\s*[\'"]?(.+?)[\'"]?\\s*$', "\\1",
-               grep("^title:", yaml_lines, value = TRUE)[1])
-  date  <- sub("^date:\\s*(.+?)\\s*$", "\\1",
-               grep("^date:", yaml_lines, value = TRUE)[1])
-  cat(sprintf("- **[%s](/posts/%s/index.html)** &mdash; %s\n", title, dir, date))
+  meta <- read_post_meta(file.path("posts", dir, "index.Rmd"))
+  if (is.null(meta)) next
+  cat(sprintf("- **[%s](/posts/%s/index.html)** &mdash; %s%s\n",
+              meta$title, dir, meta$date, tag_links_md(meta$tags)))
 }
 ```
 

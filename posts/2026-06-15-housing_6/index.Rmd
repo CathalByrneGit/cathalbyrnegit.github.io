@@ -1,6 +1,6 @@
 ---
 title: "Reaping Where They Never Sowed 6/7"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-06-15
 output:
   html:

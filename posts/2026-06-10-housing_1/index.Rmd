@@ -1,6 +1,6 @@
 ---
 title: "81 Cents 1/7"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-06-10
 output:
   html:

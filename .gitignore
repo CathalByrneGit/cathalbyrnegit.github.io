@@ -8,6 +8,10 @@
 # ── Build / deploy staging ───────────────────────────────
 _site/
 
+# Tag archive pages — generated fresh from post frontmatter by
+# build.R (see R/tags.R) on every build, never hand-authored.
+tags/
+
 # ── OS / editor noise ────────────────────────────────────
 .DS_Store
 Thumbs.db

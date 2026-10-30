@@ -1,6 +1,6 @@
 ---
 title: "A Note on Progress Ireland: Agreement, Disagreement, and the Transparency Problem"
-theme: "Irish Housing"
+tags: ["Irish Housing"]
 date: 2026-10-30
 output:
   html:
