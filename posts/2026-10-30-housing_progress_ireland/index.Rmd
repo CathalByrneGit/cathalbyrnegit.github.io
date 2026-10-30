@@ -9,43 +9,41 @@ output:
       js: ["@copy-button", "@fold-details", "@callout", "@sidenotes", "@appendix"]
 ---
 
-*An update to "The Architecture of Profit." This note engages directly with the work of the think tank Progress Ireland — where this report's analysis agrees with theirs, where it disagrees, and a structural concern about how the organisation operates. It is added here rather than folded into the main series because it responds to work and reporting published after the series went up.*
+*An update to "The Architecture of Profit". This one is about Progress Ireland: where I agree with them, where I don't, and something about how they operate that bothers me. It's a separate post because it responds to work and reporting that came out after the series went up.*
 
 ---
 
-## Agreement
+## Where we agree
 
-This report's analysis converges closely with work published by the think tank Progress Ireland, and the convergence is worth naming because the disagreement that follows is sharper for it.
+Progress Ireland and I are looking at the same thing, and I want to say so up front because the disagreements below land harder for it.
 
-On the central mechanism, we agree. Their October 2026 analysis of housing-infrastructure funding reaches the same object this report documents: the rezoning uplift from roughly €60,000 to €1.6 million per hectare in Dublin in 2024, a 27-fold increase their author describes as created mostly by a public decision and public investment. That's this report's land-value-capture argument in different words and from the same CSO sources. Their proposed remedy, land readjustment — pooling land in a development area, replotting it, and using reserve land to fund the infrastructure — is one of the more concrete operationalisations of the Kenny-report principle available in current Irish policy writing. Where this report documents *what* is captured and establishes that no official body has measured it, their work supplies part of the *how* of giving it back. On that terrain they're allies, and good ones.
+Their October 2026 piece on housing-infrastructure funding gets to the same place as my series. Rezoned land in Dublin went from roughly €60,000 to €1.6 million per hectare in 2024, a 27-fold jump that their author puts down mostly to a public decision and public investment. That is my land-value-capture argument in different words, from the same CSO sources. Their fix is land readjustment: pool the land in a development area, replot it, and use reserve land to pay for the infrastructure. It's one of the more concrete versions of the Kenny-report principle I've seen in recent Irish policy writing. I documented what gets captured and showed that no official body has measured it. They've supplied part of how you'd give it back. On this, they're allies.
 
-## Disagreement, part one: the policy
+## Where we don't, part one: the policy
 
-The agreement makes two disagreements worth stating plainly. The first is a matter of policy.
+Progress Ireland was the loudest advocate for exempting back-garden modular homes from planning. The "shedsits". As of April 2026 they're exempt not only from planning permission but, through an extension of the rent-a-room scheme, from the Residential Tenancies Board too. The think tank said the measure could deliver up to 350,000 homes.
 
-Progress Ireland was the most prominent advocate for the planning exemption for back-garden modular dwellings — the "shedsits" or garden cabins exempted, as of April 2026, not only from planning permission but, via extension of the rent-a-room scheme, from the oversight of the Residential Tenancies Board. The think tank projected the measure could deliver up to 350,000 homes.
+I think it's a bad policy, and the cost falls almost entirely on the people it's meant to help. The Irish Planning Institute raised eight objections, including that the units would drift into short-term letting and that garden potential would push house prices up for first-time buyers. Threshold and housing academics warned that rented units like these would be nearly impossible to police for standards. Opposition leaders from three parties compared it to a return of tenements and bedsits.
 
-This report regards it as the weakest kind of housing policy: one whose costs fall almost entirely on the people it claims to serve. The Irish Planning Institute raised eight distinct objections, including that the units would migrate into short-term letting and that garden-plot potential would raise house prices against first-time buyers. Threshold and housing academics warned that renting these units out would be near-impossible to police for standards, and opposition leaders across three parties characterised the measure as a return to tenement and bedsit conditions.
+Take away the planning check and the tenancy-standards check and the gain goes to whoever owns the garden, while the tenant carries the risk. An advocate can still point to it as a win because the costs are spread out, show up later, and land on tenants with the least power to say no. It's the build-anything-at-any-quality instinct, with nobody asking who pays, which is exactly the instinct this whole series is about.
 
-A policy that removes both the planning check and the tenancy-standards check, and routes the gain to the owner of the garden while the renter absorbs the risk, is a political win an advocate can point to precisely because its costs are diffuse, deferred, and borne by tenants with the least power to refuse them. It adds a line to a delivery chart; it doesn't add a line to the stock of housing anyone should have to live in. On the framework of this report, it's the supply-at-any-quality instinct detached from the distributional question of who bears the cost, which is the instinct this entire report exists to interrogate.
+## Where we don't, part two: the transparency problem
 
-## Disagreement, part two: the transparency problem
+This one is more serious.
 
-The second disagreement is structural, and it's more serious.
+Progress Ireland is funded by two billionaires. When an Oireachtas committee asked how much, they declined to say. A lot of their influence also runs through private channels to senior officials. Given what my series is about, I'm wary of that.
 
-A think tank funded by two billionaires who decline, under questioning from an Oireachtas committee, to disclose the scale of that funding, and which conducts a material part of its influence through private channels with senior officials, is operating in a manner this report's own subject matter should make the reader wary of.
+The record is specific. In December 2025 an assistant secretary general at the Department of Further and Higher Education sent a Progress Ireland staff member a confidential draft funding framework: the assessment criteria for university bids under a €750 million programme. The official marked it for review "on a strictly confidential basis", after a sister department had asked that it not be published. Progress Ireland's board includes that official's former secretary general. Then in October 2026 it emerged that the Department of Housing's new housing tsar had met a Progress Ireland lobbyist and nobody kept a record.
 
-The record is specific. In December 2025, an assistant secretary general at the Department of Further and Higher Education sent a Progress Ireland staff member a confidential draft funding framework — the assessment criteria for university bids under a €750 million programme — marked, in the official's own words, for the recipient's review "on a strictly confidential basis," after a sister department had asked that it not be published. The think tank's board includes that official's former secretary general. In October 2026 it emerged that the Department of Housing's newly appointed housing tsar had met a Progress Ireland lobbyist and no record of the engagement was kept.
+None of that is allegation. It comes from freedom-of-information requests. To be fair, minuting that meeting was the official's and the department's job, not the think tank's, and Progress Ireland's lobbying returns are on the public register, so they aren't wholly opaque. Part of what the record shows is poor record-keeping by officials, not by the lobbyist. But put it together: funding they won't put a number on, a confidential draft that travelled through a board connection, an unminuted meeting with a newly appointed official. That's a well-funded interest getting quiet, privileged access to the people who write the rules. It's the same imbalance I describe elsewhere in the series, just with a different cast.
 
-These are not allegations; they're the documented findings of freedom-of-information requests. In fairness, the obligation to minute that meeting rested with the official and the department, not with the think tank, and Progress Ireland's lobbying returns are filed on the public register — the organisation is not wholly opaque, and part of what the record shows is a failure of official record-keeping rather than of the lobbyist. But taken together — undisclosed funding scale, a confidential draft routed through a board connection, an unminuted meeting with a newly empowered official — the pattern is one of concentrated, well-resourced interest securing privileged, low-visibility access to the people who write the rules. It is the collective-action asymmetry this report describes elsewhere, in a different suit.
+It doesn't matter that they're lobbying for some things I agree with. You find out whether you believe in transparent policy-making when it's an ally doing it. Billionaire-funded access to officials that nobody can see is undemocratic when the Construction Industry Federation does it, and it's undemocratic when a think tank I often agree with does it.
 
-That the lobbying in question is in service of some policies this report *agrees* with doesn't change the objection. The test of a commitment to transparent, accountable policy-making is whether it survives contact with an ally. Opaque billionaire-funded access to officials is undemocratic when the Construction Industry Federation does it, and it is undemocratic when a think tank this report often agrees with does it.
+## Where that leaves me
 
-## Where this leaves us
+I'm not dismissing them. Their research is often rigorous, they compare across countries usefully, and on land value capture they're pushing in the direction the evidence points. They could do a lot of good in Irish housing policy.
 
-None of this is a reason to dismiss the organisation, and this report doesn't. Its research is frequently rigorous, its comparative range is genuinely useful, and on land value capture it's pushing in the direction the evidence supports. It can play a real and constructive role in Irish housing policy.
-
-But it will play that role better — and its arguments will carry the authority its research deserves — if it submits its funding and its official engagements to the same daylight it rightly asks of the planning system. An organisation that wants the state to capture privately held value for the public good should find it easy to let the public see who funds it and whom it meets.
+They'd do it better, and their arguments would carry more weight, if they put their funding and their meetings with officials under the same daylight they ask of the planning system. If you want the state to capture privately held value for the public, letting the public see who funds you and who you meet shouldn't be hard.
 
 ---
 
