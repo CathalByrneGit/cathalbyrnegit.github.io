@@ -142,13 +142,14 @@ body > nav {
 }
 body > nav p { margin: 0; }
 body > nav a {
-  margin-right: 2em;
+  margin-right: 1.6em;
   text-decoration: none;
   color: var(--dim);
   font-size: 0.78em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+body > nav a:last-child { margin-right: 0; }
 body > nav a:hover { color: var(--rust); }
 
 /* ── Footer ───────────────────────────────────────────── */
