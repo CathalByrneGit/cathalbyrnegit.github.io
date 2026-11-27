@@ -113,6 +113,9 @@ pre > code {
 .fenced-chunk { border-left-color: var(--dim); }
 
 /* ── Tables ───────────────────────────────────────────── */
+/* Wide tables scroll inside the text column instead of widening the
+   whole page (which left text in a narrow strip when zoomed out on phones). */
+article table { display: block; max-width: 100%; overflow-x: auto; }
 table:not([class]) {
   border-top-color: var(--border);
   border-bottom-color: var(--border);
